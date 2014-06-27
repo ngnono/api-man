@@ -1,0 +1,196 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 65px;
+}
+
+.navbar-right{
+    float: right;
+}
+
+#main-container{
+   padding: 25px;
+   border: 1px solid rgba(0, 0, 0, 0.15);
+   background-color: #fff;
+   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+   margin-bottom: 30px;
+}
+
+#slide-container{
+  margin-top: 20px;
+  position: fixed;
+}
+
+#slide-container .nav ul{
+   padding-left: 5px;
+}
+
+#slide-container .nav li{
+  margin: 0px;
+}
+
+#slide-container .nav li a{
+  font-size: 14px;
+}
+
+#slide-container .nav > li > a {
+  position: relative;
+  display: block;
+  padding: 5px;
+}
+
+#slide-container .nav li a:focus{
+  font-size: 14px;
+  background-color: #fff
+}
+
+.navbar-inverse {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #2f4354;
+    background-repeat: repeat-x;
+    border-color: -moz-use-text-color -moz-use-text-color ##5bc0de;
+    border-image: none;
+    border-radius: 0;
+    border-style: none none solid;
+    border-width: medium medium 1px;
+    margin-bottom: 0;
+    opacity: 0.8;
+    z-index: 1001;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #141c23;
+}
+.navbar-collapse.in {
+    max-height: none;
+    overflow-y: visible;
+}
+.navbar-inverse .navbar-brand {
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.navbar-inverse .navbar-brand:hover {
+    background-color: #2c3e4e;
+    color: #fff;
+}
+.navbar-inverse .navbar-brand-img {
+    height: 60px;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.navbar-inverse .navbar-toggle {
+    border: medium none;
+    border-radius: 0;
+    color: #6f91ae;
+    font-size: 17px;
+    height: 60px;
+    line-height: 60px;
+    margin: 0;
+    outline: medium none;
+    padding: 0 18px;
+    text-align: center;
+}
+.navbar-inverse .navbar-toggle:active, .navbar-inverse .navbar-toggle:focus {
+    background-color: transparent;
+}
+.navbar-inverse .navbar-toggle:hover {
+    background-color: #3b5368;
+    color: #547795;
+}
+.navbar-inverse .navbar-toggle.is-open {
+    background-color: #3b5368;
+    color: #fff;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+    background-color: #2c3e4e;
+}
+.navbar-inverse .navbar-nav > li.active > a, .navbar-inverse .navbar-nav > li.active > a:hover, .navbar-inverse .navbar-nav > li.active > a:active, .navbar-inverse .navbar-nav > li.active > a:focus {
+    background-color: #2c3e4e;
+}
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: #2c3e4e;
+}
+.navbar-inverse .navbar-nav > .navbar-profile > a {
+    height: 60px;
+    line-height: 60px;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.navbar-profile-avatar {
+    border: 2px solid #fff;
+    border-radius: 3px;
+    margin-right: 0.65em;
+    position: relative;
+    top: -1px;
+    width: 30px;
+}
+
+.bs-callout {
+    border-left: 3px solid #eee;
+    margin: 20px 0;
+    padding: 20px;
+}
+.bs-callout h4 {
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+.bs-callout p:last-child {
+    margin-bottom: 0;
+}
+.bs-callout code {
+    background-color: #fff;
+    border-radius: 3px;
+}
+.bs-callout-danger {
+    background-color: #fdf7f7;
+    border-color: #d9534f;
+}
+.bs-callout-danger h4 {
+    color: #d9534f;
+}
+.bs-callout-warning {
+    background-color: #fcf8f2;
+    border-color: #f0ad4e;
+}
+.bs-callout-warning h4 {
+    color: #f0ad4e;
+}
+.bs-callout-info {
+    background-color: #f4f8fa;
+    border-color: #5bc0de;
+}
+.bs-callout-info h4 {
+    color: #5bc0de;
+}
+
+pre {
+    background-color: transparent;
+    border: 0px solid #cccccc;
+    border-radius: 0px;
+    color: #333333;
+    display: block;
+    font-size: 13px;
+    line-height: 1.42857;
+    margin: 0 0 10px;
+    padding: 9.5px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.bs-callout code {
+    background-color: transparent;
+    border-radius: 3px;
+    padding: 10px;
+}
+.poiner{
+    cursor: pointer;
+}

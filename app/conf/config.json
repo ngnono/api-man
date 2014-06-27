@@ -1,0 +1,57 @@
+{
+  "apis": [
+    {
+      "name": "用户API",
+      "resources": {
+        "/api/account/token": {
+          "POST": {
+            "data": {
+              "UserName": "",
+              "Password": ""
+            },
+            "description": "用户授权接口，用于用户登陆获取Token"
+          }
+        }
+      }
+    },
+    {
+      "name": "门店API",
+      "resources": {
+        "/api/stores/:id": {
+          "GET": {
+            "url": "/api/stores/1"
+          },
+          "POST": {
+            "data": {}
+          },
+          "PUT": {
+            "data": {}
+          },
+          "DELETE": {
+            "data": {}
+          }
+        }
+      }
+    }
+  ],
+  "envs": {
+    "开发环境": {
+      "host": "111.207.166.196",
+      "port": 8086,
+      "consumerKey": "100000001",
+      "consumerSecure": "test001"
+    },
+    "测试环境": {
+      "host": "111.207.166.195",
+      "port": 8086,
+      "consumerKey": "100000001",
+      "consumerSecure": "test001"
+    },
+    "生产环境": {
+      "host": "111.207.166.196",
+      "port": 8086,
+      "consumerKey": "100000001",
+      "consumerSecure": "test001"
+    }
+  }
+}
