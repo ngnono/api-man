@@ -29,7 +29,7 @@ angular.module('apiManApp')
 				}
 			}).success(function(data, status) {
 				$scope.message = data.message;
-				$scope.$emit('changeConfig',{});
+				$scope.$emit('menuChange', {});
 			}).error(function(data, status) {
 				$scope.message = data.message;
 			});

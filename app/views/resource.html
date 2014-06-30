@@ -1,10 +1,10 @@
     <div >
-    <h3><span class="label label-success">{{httpMethod}}</span> {{path}}</h3>
+    <h4><span class="label label-info"> {{httpMethod}}  </span><span>&nbsp;{{path}}</span></h4>
 
   <div class="bs-callout bs-callout-info">
-    <h4>接口说明：</h4>
+    <h5>接口说明：</h5>
       <p>{{metadata.description|| "--"}}</p>
-    <h4>授权信息：</h4>
+    <h5>授权信息：</h5>
     <p >{{token.env|| "--"}} {{token.UserName}}</p>
   </div>
     <form role="form" class="container-fluid">
@@ -17,9 +17,9 @@
        <textarea class="form-control" rows="5"  ng-model="requestData"></textarea>
       </div>
       
-      <div class="btn-group">
-      <button ng-repeat="(name,value) in envs" type="button" ng-click="getData(name)" class="btn btn-default btn-info">
-        获取{{name}}数据
+      <div class="btn-toolbar">
+      <button ng-repeat="(name,value) in envs" type="button" ng-click="getData(name)" class="btn btn-primary btn-success">
+        {{name}}数据
       </button>
     </div>
       

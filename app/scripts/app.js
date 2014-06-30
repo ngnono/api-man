@@ -10,17 +10,17 @@ angular
     'angular-loading-bar',
     'hljs'
   ])
-  .config(function ($routeProvider) {
+  .config(function($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/res/:httpMethod/:path*',{
+      .when('/res/:httpMethod/:path*', {
         templateUrl: 'views/resource.html',
         controller: 'ResourceCtrl'
       })
-      .when('/settings',{
+      .when('/settings', {
         templateUrl: 'views/settings.html',
         controller: 'SettingsCtrl'
       })

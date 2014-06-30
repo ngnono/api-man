@@ -9,7 +9,6 @@ angular.module('apiManApp')
 		$scope.showResult = false;
 		$scope.token = $cookieStore.get('token') || {};
 
-
 		// 获取方法列表
 		ConfigService.get(function(data) {
 
@@ -95,12 +94,12 @@ angular.module('apiManApp')
 					'X-Sign': sign
 				}
 			}).success(function(data, status, headers, config, statusText) {
-				// body...
 
 				$scope.result = {
 					'data': angular.toJson(data, true),
 					'status': status
 				};
+
 				$scope.showResult = true;
 
 				//如果是授权接口进行设置Token
@@ -114,7 +113,6 @@ angular.module('apiManApp')
 				}
 
 			}).error(function(data, status) {
-				// body...
 				$scope.result = {
 					'data': angular.toJson(data, true),
 					'status': status
@@ -123,5 +121,4 @@ angular.module('apiManApp')
 
 			});
 		}
-
 	});
