@@ -5,7 +5,7 @@ angular.module('apiManApp')
 
 		$scope.path = "/" + $routeParams.path;
 		$scope.httpMethod = $routeParams.httpMethod;
-		$scope.showData = $scope.httpMethod === "POST" || $scope.httpMethod === "PUT" || $scope.httpMethod === "DELETE";
+		$scope.showData = $scope.httpMethod === "POST" || $scope.httpMethod === "PUT";
 		$scope.showResult = false;
 		$scope.token = $cookieStore.get('token') || {};
 
@@ -42,7 +42,6 @@ angular.module('apiManApp')
 			// 设置当前的环境的名称
 			$scope.currentEnv = envname;
 
-
 			// 服务的地址
 			var url = '/proxy' + $scope.url;
 
@@ -67,11 +66,19 @@ angular.module('apiManApp')
 
 			buffer.push(method);
 			buffer.push($scope.url);
-			buffer.push(data);
+
+			if (method === 'GET') {
+				buffer.push('{}');
+			} else {
+				buffer.push(data);
+			}
+
 			buffer.push(consumerKey);
 			buffer.push(consumerSecure);
 
 			var sign = md5.createHash(buffer.join('').toUpperCase());
+
+			console.log(buffer.join('').toUpperCase());
 
 			$scope.result = {};
 

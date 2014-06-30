@@ -21,11 +21,9 @@
           "GET": {
             "url": "/api/stores/1"
           },
-          "POST": {
-            "data": {}
-          },
           "PUT": {
-            "data": {}
+            "url":"/api/stores/2",
+            "data": {"Name":"test001"}
           },
           "DELETE": {
             "data": {}
