@@ -56,8 +56,8 @@ app.use('/proxy/*', function(req, res) {
  */
 app.post('/conf/save', function(req, res) {
 
-	var token = req.param.token;
-	var data = req.param.data;
+	var token = req.param('token');
+	var data = req.param('data');
 
 	// ------------------------------- 
 	//  校验Token

@@ -22,8 +22,10 @@
             "url": "/api/stores/1"
           },
           "PUT": {
-            "url":"/api/stores/2",
-            "data": {"Name":"test001"}
+            "url": "/api/stores/2",
+            "data": {
+              "Name": "test001"
+            }
           },
           "DELETE": {
             "data": {}
@@ -33,19 +35,19 @@
     }
   ],
   "envs": {
-    "开发环境": {
+    "开发": {
       "host": "111.207.166.196",
       "port": 8086,
       "consumerKey": "100000001",
       "consumerSecure": "test001"
     },
-    "测试环境": {
+    "测试": {
       "host": "111.207.166.195",
       "port": 8086,
       "consumerKey": "100000001",
       "consumerSecure": "test001"
     },
-    "生产环境": {
+    "生产": {
       "host": "111.207.166.196",
       "port": 8086,
       "consumerKey": "100000001",
