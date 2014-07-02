@@ -75,7 +75,7 @@ angular.module('apiManApp')
 			buffer.push(consumerKey);
 			buffer.push(consumerSecure);
 
-			var sign = md5.createHash(buffer.join('').toUpperCase());
+			var sign = md5(buffer.join('').toUpperCase());
 
 			console.log(buffer.join('').toUpperCase());
 

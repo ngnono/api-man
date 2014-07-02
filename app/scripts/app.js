@@ -6,7 +6,6 @@ angular
     'ngResource',
     'ngSanitize',
     'ngRoute',
-    'angular-md5',
     'angular-loading-bar',
     'hljs'
   ])

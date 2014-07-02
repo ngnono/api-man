@@ -15,5 +15,6 @@ angular.module('apiManApp')
       loadMenu();
     });
 
+
     loadMenu();
 });
